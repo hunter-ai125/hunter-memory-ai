@@ -15,7 +15,29 @@
 - 🧠 **本地大模型支持**：集成 Ollama / OpenAI，支持 RAG 检索增强。
 - 🎮 **沉浸式终端交互**：自带聊天界面，看着 AI 生态在眼前进化。
 
+## ⚙️ 环境要求
+
+- Python 3.8 或更高版本（推荐 3.10）
+- 安装依赖：
+  ```bash
+  pip install -r requirements.txt
+  ```
+- 安装 Ollama 并拉取推荐模型（用于对话）：
+  ```bash
+  ollama pull qwen2.5:1.5b
+  ```
+- 或者，如果你想使用 OpenAI API，请设置环境变量 `OPENAI_API_KEY`
+
+## ✅ 验证安装
+
+运行测试，检查核心功能是否正常：
+```bash
+python test_hunter.py
+```
+看到 `✅ 测试完成！` 即表示环境配置成功。
+
 ## 🚀 快速开始
+
 1. 安装依赖：`pip install -r requirements.txt`
 2. 确保已安装 Ollama 并拉取模型：`ollama pull qwen2.5:1.5b`
 3. 运行聊天：`python chat.py`
